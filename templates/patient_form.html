@@ -1,0 +1,66 @@
+{%extends 'layout.html'%}
+{%block content%}
+{{error}}
+<div class="patient_register">
+<form action="/patient_register" method="post">
+    <div class="label">
+        <p>first name</p>
+    </div>
+    <div class="input">
+        <input type="text" name="firstname" id="">
+    </div>
+    <div class="label">
+        <p>last name</p>
+    </div>
+    <div class="input">
+        <input type="text" name="lastname" id="">
+    </div>
+    <div class="label">
+        <p>phone munber</p>
+    </div>
+    <div class="input">
+        <input type="tel" name="phonenumber" id="">
+    </div>
+    <div class="label">
+        <p>email</p>
+    </div>
+    <div class="input">
+        <input type="text" name="email" id="">
+    </div>
+    <div class="label">
+        <p>age</p>
+    </div>
+    <div class="input">
+        <input type="text" name="age" id="">
+    </div>
+    
+    <div class="label">
+        <p>password</p>
+    </div>
+    <div class="input">
+        <input type="text" name="password" id="">
+    </div>
+    <div class="label">
+        <p>confirm password</p>
+    </div>
+    <div class="input">
+        <input type="text" name="confirmpassword" id="">
+    </div>
+    <div class="label">
+        <p>gender</p>
+    </div>
+    <div class="input">
+        <input type="text" name="gender" id="">
+    </div>
+    <div class="label">
+        <p>city</p>
+    </div>
+    <div class="input">
+        <input type="text" name="city" id="">
+    </div>
+    <button type="submit">submit</button>
+    
+
+</form>
+</div>
+{%endblock%}

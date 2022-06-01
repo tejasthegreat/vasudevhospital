@@ -1,0 +1,97 @@
+body{
+    margin-left: 5%;
+    margin-right: 5%;
+    background-image: url(./hospital_bg.jpg);
+    background-color: grey;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+}
+.doctor_register{
+    display:grid;
+    height: 500px;
+    justify-content: center; 
+    align-items: center;
+}
+.doctor_register form{
+    background-color: antiquewhite;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: large;
+    text-align:center;
+    font-weight:600;
+    text-transform: uppercase;
+    line-height: 30px;
+    margin-bottom: 40px;
+}
+.doctor_register button{
+    background-color: royalblue;
+    color:white;
+    margin-top: 10px;
+    width:100%;   
+}
+.input{
+    margin-bottom: 20px;
+}
+
+h1{
+    text-align:center;
+    color:white;
+}
+
+
+.login{
+    display:grid;
+    height: 700px;
+    justify-content: center; 
+    align-items: center;
+} 
+.login form{
+    background-color: antiquewhite;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: large;
+    text-align:center;
+    font-weight:600;
+    text-transform: uppercase;
+    line-height: 30px;
+    margin-bottom: 40px;    
+}
+
+.login button{
+    background-color: royalblue;
+    color:white;
+    margin-top: 10px;
+    width:100%;    
+}
+
+.patient_register{
+    display:grid;
+    height: 700px;
+    justify-content: center; 
+    align-items: center;   
+}
+
+.patient_register form{
+    background-color: antiquewhite;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: large;
+    text-align:center;
+    font-weight:600;
+    text-transform: uppercase;
+    line-height: 30px;
+    margin-bottom: 40px; 
+    display: grid;
+    grid-template-columns: 1fr 1fr ;  
+}
+
+.patient_register button{
+    background-color: royalblue;
+    color:white;
+    margin-top: 10px;
+    width:100%; 
+    
+    grid-column:1/3;
+}    
+

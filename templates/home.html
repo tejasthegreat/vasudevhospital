@@ -1,0 +1,102 @@
+{%extends 'layout.html'%}
+{%block content %}
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family: cursive;
+            font-size: 20px;
+        }
+        .login{
+            display: grid;
+            grid-template-columns: 15% 30% 30% 15%  ;
+            gap: 30px;
+            height: 100vh;
+            margin: 5%;
+            padding: 10px;
+        }
+        .login>div{
+            border: solid;
+            border-radius: 10px;
+            padding: 10px;
+            box-shadow: 0 0 10px blue;
+            padding-left:25px;
+        }
+        .patient_login,.doctor_login{
+            display: grid;
+        
+            align-items: center;
+            justify-content: space-around;
+     
+            background-color: rgba(29, 28, 28, 0.445);
+            color: white;
+        }
+        .image{
+            border-radius: 50%;
+            padding-left: 20%;
+        }
+        img{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            
+        }
+        .login_button button{
+            padding: 10px;
+            width: 200px;
+            border-radius: 10px;
+            background-color: royalblue;
+            color: white;
+            font-size: larger;
+            box-shadow: 0 0 10px #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="login">
+        <div style="border: none; box-shadow: none;">
+
+        </div>
+        <div class="patient_login"> 
+            <div class="heading">
+                <h2>Login as a patient</h2>
+            </div>
+            <div class="image">
+                <img src="../static/patient.jpg" alt="">
+            </div>
+            <div class="info">
+                <h5>accessable for 24/7</h5>
+            </div>
+            <div class="login_button">
+                <a href="/login"><button >Login</button></a>
+            </div>
+            <div class="register">
+                <h5><a href="/patient_register">register</a> here to login</h5>
+            </div>
+        </div>
+
+        <div class="patient_login"> 
+            <div class="heading">
+                <h2>Login as a doctor</h2>
+            </div>
+            <div class="image">
+                <img src="../static/doctor.jpg" alt="">
+            </div>
+            <div class="info">
+                <h5>accessable for 24/7</h5>
+            </div>
+            <div class="login_button">
+                <a href="/doctor_login"><button >Login</button></a>
+            
+        
+    </div>
+
+
+{%for friend in friends%} 
+<h1>{{friend}}</h1>   
+    {%endfor%}
+   
+    {%endblock%}

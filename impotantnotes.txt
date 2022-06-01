@@ -1,0 +1,10 @@
+sql-stuctured query language
+1.create connection
+2. A.creating table-CREATE TABLE
+B.insert values-INSERT INTO
+C. extracting data-SELECT
+3.constraints  A.primary key
+B.unique
+C.check
+select password from userdata where email='test@gmail.com';
+while taking data from user use 'html from'

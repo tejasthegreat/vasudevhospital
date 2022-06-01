@@ -1,0 +1,3 @@
+learn basics of sqlite
+practice-css and html
+practice 1.create table,2.insertinto,3.drop table,4.delete,4.uptdate,5.whereclause,6.primarykey,7.autoincriment

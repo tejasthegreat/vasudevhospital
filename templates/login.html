@@ -1,0 +1,25 @@
+{%extends 'layout.html'%}
+{%block content%}
+{{error}}
+<p style="text-align:center ; color:antiquewhite">{{message}}</p>
+<div class="login">
+    <form action="/login" method="post">
+    <div class="label">
+        <p>email</p>
+    </div>
+    <div class="input">
+        <input type="text" name="email" id="">
+    </div>
+    <div class="label">
+        <p>password</p>
+    </div>
+    <div class="input">
+        <input type="text" name="password" id="">
+    </div>
+    <button type="submit">SUBMIT</button>
+</form>
+</div>
+
+
+
+{%endblock%}

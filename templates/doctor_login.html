@@ -1,0 +1,24 @@
+{%extends 'layout.html'%}
+{%block content%}
+<div class="doctor_register">
+<form action="/doctor_login" method="post">
+    <div class="label">
+        <p>email</p>
+    </div>
+    <div class="input">
+        <input type="text" name="email" id="">
+    </div>
+    <div class="label">
+        <p>password</p>
+    </div>
+    <div class="input">
+        <input type="password" name="password" id="">
+    </div>
+    <button type="submit">submit</button>
+</form>
+</div>
+<div>
+<a href="/allappointments">go to appointments</a>
+</div>
+<p>{{message}}</p>
+{%endblock%}

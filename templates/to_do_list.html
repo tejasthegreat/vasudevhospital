@@ -1,0 +1,14 @@
+{%extends 'layout.html'%}
+{%block content%}
+<form action="/to_do_list" method="post">
+   <p>taskname</p>
+   <input type="text"  name="taskname" required>
+   <p>end_date</p>
+   <input type="date"  name="end_date" required>
+   <p>end_time</p>
+   <input type="time"  name="end_time" required>
+   <button type="submit">submit</button>
+</form>
+<a href="/view_to_do">view to do</a>
+{{message}}
+{%endblock%}

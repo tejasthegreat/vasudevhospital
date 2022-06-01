@@ -1,0 +1,30 @@
+{%extends 'layout.html'%}
+{%block content%}
+<h1>todays appointments</h1>
+<table class="table table-dark table-striped">
+    <thead>
+      <tr>
+        <th scope="col">sl.no</th>
+        <th scope="col">full name</th>
+        <th scope="col">age</th>
+        <th scope="col">appointment time</th>
+        <th scope="col">gender</th>
+        <th scope="col">date</th>
+      </tr>
+    </thead>
+    {%for record in records %}
+    <tbody>
+
+      <tr>
+        <th scope="row">{{record[9]}}</th>
+        <td>{{record[1]}}</td>
+        <td>{{record[4]}}</td>
+        <td>{{record[11]}}</td>
+        <td>{{record[8]}}</td>
+        <td>{{record[10]}}</td>
+      </tr>
+      
+    </tbody>
+    {%endfor%}
+  </table>
+{%endblock%}
